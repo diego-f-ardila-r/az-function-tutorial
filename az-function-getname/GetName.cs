@@ -1,4 +1,5 @@
-using System;
+#r "Newtonsoft.Json"
+
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -7,10 +8,9 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System.Linq;
 
 
-namespace Tutorial.Function
+namespace az_function_tutorial.Function
 {
     public static class GetName
     {
